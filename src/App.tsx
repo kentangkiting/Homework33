@@ -1,35 +1,47 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import {
+  StyledComponentButton,
+  StyledComponentHeader,
+  StyledComponentParagraph,
+} from "./appstyledcomponent";
+import { EmotionButton, EmotionHeader, EmotionParagraph } from "./appemotion";
+import { LinariaButton, LinariaHeader, LinariaParagraph } from "./applinaria";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <>
+    <div>
+      <p>Styled component</p>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <StyledComponentHeader>
+          Selamat Datang di Pelajaran CSS-in-JS
+        </StyledComponentHeader>
+        <StyledComponentParagraph>JayJay</StyledComponentParagraph>
+        <StyledComponentButton primary>Lanjut Belajar!</StyledComponentButton>
+        <StyledComponentButton>Kembali</StyledComponentButton>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <hr />
+      <p>emotion</p>
+      <div>
+        <EmotionHeader>Selamat Datang di Pelajaran CSS-in-JS</EmotionHeader>
+        <EmotionParagraph>JayJay</EmotionParagraph>
+        <EmotionButton primary>Lanjut Belajar!</EmotionButton>
+        <EmotionButton>Kembali</EmotionButton>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      <hr />
+      {/* <p>linarias on top of WyW-in-JS.dev</p> */}
+      <div>
+        {/* <LinariaHeader>Selamat Datang di Pelajaran CSS-in-JS</LinariaHeader>
+        <LinariaParagraph>JayJay</LinariaParagraph>
+        <LinariaButton>Lanjut Belajar!</LinariaButton>
+        <LinariaButton>Kembali</LinariaButton> */}
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
