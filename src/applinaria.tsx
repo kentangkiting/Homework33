@@ -10,20 +10,15 @@ const baseColorBlue = css`
 `;
 
 const LinariaHeader = styled.h2`
-  ${baseColorRed}
+  color: red;
 `;
 
 const LinariaParagraph = styled.p`
-  ${baseColorBlue}
+  color: blue;
 `;
 
 const LinariaButton = styled.button`
-  ${baseColorBlue};
-  ${(props) =>
-    props.primary &&
-    css`
-      ${baseColorRed}
-    `}
+  color: ${(props) => (props.primary ? "red" : "blue")};
 `;
 
 export { LinariaButton, LinariaHeader, LinariaParagraph };

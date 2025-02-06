@@ -33,12 +33,12 @@ function App() {
         <EmotionButton>Kembali</EmotionButton>
       </div>
       <hr />
-      {/* <p>linarias on top of WyW-in-JS.dev</p> */}
+      <p>linarias on top of WyW-in-JS.dev</p>
       <div>
-        {/* <LinariaHeader>Selamat Datang di Pelajaran CSS-in-JS</LinariaHeader>
+        <LinariaHeader>Selamat Datang di Pelajaran CSS-in-JS</LinariaHeader>
         <LinariaParagraph>JayJay</LinariaParagraph>
-        <LinariaButton>Lanjut Belajar!</LinariaButton>
-        <LinariaButton>Kembali</LinariaButton> */}
+        <LinariaButton primary>Lanjut Belajar!</LinariaButton>
+        <LinariaButton>Kembali</LinariaButton>
       </div>
     </div>
   );
